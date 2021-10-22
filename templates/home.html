@@ -1,0 +1,164 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="https://kit.fontawesome.com/43707c6535.js" crossorigin="anonymous"></script>
+    <title>Donate</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="container nav-contents">
+            <div>
+                <h1 class="title">DONATE</h1>
+                <p>for Cancer patients</p>
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home">
+        <div class="container home">
+             <div class="image">
+                <div class="mySlides">
+                    <img src="{% static 'img2.jpg' %}">
+                </div>
+                <div class="mySlides">
+                    <img src="{% static 'img3.jpg' %}">
+                </div>
+                <div class="mySlides">
+                    <img src="{% static 'img1.jpg' %}">
+                </div>
+            </div>
+            <div class="btn_ container">
+                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IBytJYScLOsEGv" async> </script> </form>
+                <p>Donate now and save lives!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about">
+        <div class="container about_us back">
+            <div>
+                <h2 class="head2">About us</h2>
+                <p>DONATE is a platform which exists to help cancer patients get their treatment.
+                Established in 1999, it is the largest and the most trusted platform in India. It is easy to use and conveniently collects the funds from the donars. The collected money is then given to the needful cancer patient though different organisations. DONATE has now become a community of 2M+ donars and 200+ partners, serving 10M+ people across the country.</p>
+            </div>
+            <div class="count">
+                <div class="count_item">
+                    <span>2M+</span>
+                    <p>Donars</p>
+                </div>
+                <div class="count_item">
+                    <span>200+</span>
+                    <p>Corporate Partners & Brands</p>
+                </div>
+                <div class="count_item">
+                    <span>10M+</span>
+                    <p>Lives Served</p>
+                </div>
+            </div>
+            <div class="founder">
+                <div class="People">
+                    <img src="{% static 'img4.jpeg' %}" alt="">
+                    <h3>Benjamin Roy</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="People">
+                    <img src="{% static 'img6.jpg' %}" alt="">
+                    <h3>Hazel Gill</h3>
+                    <p>Co-Founder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact">
+        <div class="container contact_page back">
+            <h2 class="head2">Contact Us</h2>
+            <div class="cont">
+                <div class="contact_p form_p">
+                    <p class="line"><strong>We'd love to hear from you</strong></p>
+                    <p class="clr">Comments, suggestions and questions are always welcome</p>
+                    <br>
+                    <form action="" method="POST" class="clr">
+                        <div>
+                            <label for="username" class="li">Full Name:</label>
+                            <br>
+                            <input type="text" id="username" required>
+                        </div>
+                        <div>
+                            <br>
+                            <label for="email" class="li">Email:</label>
+                            <br>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div>
+                            <br>
+                            <label for="phone" class="li">Phone no. (optional):</label>
+                            <br>
+                            <input type="text" id="phone">
+                        </div>
+                        <div>
+                            <br>
+                            <label for="msg" class="li">Message:</label>
+                            <br>
+                            <textarea name="" id="msg" cols="42" rows="10" required placeholder="Type your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+                <div class="contact_p">
+                    <p class="line"><strong>Contact Details:</strong></p>
+                    <br>
+                    <div class="clr">
+                        <div class="co">
+                            <i class="fas fa-map-marker-alt fa-2x text-red"></i>
+                            <h3>Location</h3>
+                        </div>
+                        <p class="li">Jharkhand, India</p>
+                    </div>
+                    <div class="clr">
+                        <br>
+                        <div class="co">
+                            <i class=" far fa-envelope fa-2x text-red"></i>
+                            <h3>Email</h3>
+                        </div>
+                        <p class="li">contact@donate.in</p>
+                    </div>
+                    <div class="clr">
+                        <br>
+                        <div class="co">
+                            <i class="fas fa-phone-square-alt fa-2x text-red"></i>
+                            <h3>Call</h3>
+                        </div>
+                        <p class="li">+919900364572</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer foot">
+        <div>
+            <i class="fab fa-facebook-square fa-3x"></i>
+            <i class="fab fa-twitter-square fa-3x"></i>
+            <i class="fab fa-instagram-square fa-3x"></i>
+        </div>
+        <p>Donate website &copy; All Rights Reserved</p>
+    </footer>
+
+    <script src="{% static 'dyna.js' %}"></script>
+</body>
+</html>

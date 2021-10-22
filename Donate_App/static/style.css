@@ -1,0 +1,194 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ############# NAVBAR ############## */
+.navbar{
+    box-shadow: 0px 8px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 999;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.nav-contents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .container .title{
+    font-size: 2.6rem;
+    font-weight: 550;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    list-style: none;
+    margin-left: 2rem;
+    font-size: 1.7rem;
+}
+.menu a{
+    color: rgb(59, 58, 58);
+    font-weight: 500;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: #0a5a5a;
+}
+
+
+/* ############### HOME PAGE ################# */
+.mySlides {
+    display: none;
+}
+.image .mySlides img{
+    margin-top: 65px;
+    max-height: 650px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.home .image{
+    position: relative;
+}
+.home .btn_{
+    position: absolute;
+    top: 100px;
+    height: 650px;
+    text-align: center;
+    padding-top: 500px;
+    font-size: 2rem;
+}
+
+
+/* #################### ABOUT PAGE ###################### */
+.back{
+    background: rgba(240, 239, 239, 0.795);
+    margin-top: 50px;
+}
+.head2{
+    margin: 20px 10px;
+    font-size: 2.5rem;
+    border-bottom: 4px solid #16a083;
+    color: rgb(24, 21, 21);
+}
+.about_us p{
+    margin: 25px 10px 10px 10px;
+    font-size: 1.5rem;
+    color: rgb(59, 58, 58);
+    word-spacing: 0.15em; 
+}
+.count_item{
+    margin-top: 3rem;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+.count::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.count_item span{
+    color: #16a083;
+    font-size: 1.4rem;
+}
+.count_item p{
+    margin-top: 0px;
+    color: rgb(29, 28, 28);
+}
+.People{
+    margin-top: 3rem;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.founder::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.People img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.People h3{
+    font-size: 1.5rem;
+}
+.People p{
+    margin-top: 0px;
+    font-size: 1.2rem;
+}
+
+
+/* ################ ABOUT PAGE ################ */
+.contact_p{
+    float: left;
+    width: 50%;
+    margin-top: 2rem;
+    padding-left: 170px;
+}
+.cont::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.line{
+    font-size: 1.5rem;
+}
+.li{
+    font-size: 1.2rem;
+}
+.clr{
+    color: rgb(59, 58, 58);
+}
+.co{
+    display: flex;
+}
+.co i{
+    color: #16a083;
+}
+.co h3{
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+.btn{
+    font-size: 1.2rem;
+    padding: 0.8rem 2.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    background: #16a083;
+}
+.btn:hover{
+    background: #074437;
+    transition: background 0.3s ease-in-out;
+}
+
+
+/* ################ FOOTER PAGE #################### */
+.footer{
+    background: #263238;
+    color:#f4f4f4;
+    text-align: center;
+}
+.footer i{
+    margin-left: 1rem;
+}
+.foot{
+    margin-top: 50px;
+}
